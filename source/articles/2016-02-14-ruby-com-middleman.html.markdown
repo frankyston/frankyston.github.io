@@ -1,7 +1,7 @@
 ---
 title: Ruby com MiddleMan
 date: 2016-02-14 22:30
-tags: Ruby
+tags: ruby, rails, middleman
 author: Frankyston Lins
 layout: post
 ---

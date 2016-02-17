@@ -24,10 +24,13 @@ module CustomHelpers
 
   def tags(article = current_article, separator = ', ')
     capture_haml do
-      article.tags.each do |tag|
-        haml_tag(:a, tag, href: tag_path(tag))
-        haml_concat(separator) unless article.tags.last == tag
+      haml_tag(:ul, class: "categories") do
+        haml_tag(:li) do
+          article.tags.each do |tag|
+            haml_tag(:a, tag, class: "categoryTag", href: tag_path(tag))
+          end
+        end
       end
-    end.gsub("\n", '')
+    end
   end
 end
