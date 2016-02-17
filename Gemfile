@@ -20,4 +20,3 @@ gem "middleman-disqus"
 gem "middleman-syntax"
 gem 'redcarpet', '~> 3.3.4'
 gem "middleman-blog"
-gem 'middleman-gh-pages'
