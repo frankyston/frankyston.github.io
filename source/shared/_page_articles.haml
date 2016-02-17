@@ -1,0 +1,11 @@
+%section#posts.posts
+  %ul.postList
+    - page_articles.each_with_index do |article, index|
+      %li.post
+        %div{:style => " background: url('#{data.covers[index].cover}') no-repeat center center;  -webkit-background-size: cover;-moz-background-size: cover;-o-background-size: cover;background-size: cover; "}
+          %span.post__date
+            = article.date.strftime("%d/%m/%Y %H:%M")
+          %article.post__content
+            = link_to article.title, article, class: "post__title"
+            %section.post__excerpt
+              = summary(article)
