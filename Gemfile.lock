@@ -100,6 +100,8 @@ GEM
       ptools
     middleman-disqus (1.2.0)
       middleman-core (~> 4.0)
+    middleman-gh-pages (0.2.0)
+      rake (> 0.9.3)
     middleman-google-analytics (2.0.1)
       activesupport (~> 4.1)
       erubis
@@ -139,6 +141,7 @@ GEM
       rack
     rack-test (0.6.3)
       rack (>= 1.0)
+    rake (10.5.0)
     rb-fsevent (0.9.7)
     rb-inotify (0.9.7)
       ffi (>= 0.5.0)
@@ -167,6 +170,7 @@ DEPENDENCIES
   middleman-compass (>= 4.0.0)
   middleman-deploy (= 2.0.0.pre.alpha)
   middleman-disqus
+  middleman-gh-pages
   middleman-google-analytics (~> 2.0)
   middleman-livereload
   middleman-sprockets (~> 4.0.0.rc)
