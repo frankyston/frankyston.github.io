@@ -6,111 +6,32 @@ author: Frankyston Lins
 layout: post
 ---
 
-No Terra, o nosso processo de desenvolvimento front-end evoluiu muito nos últimos anos.
-Relatei o histórico dessa evolução e como saimos de um processo totalmente falho para um processo eficaz e automatizado na palestra "Processo de Desenvolvimento front-end - Do caos ao Sublime", também disponível em vídeo.
-Nosso processo antigo baseava-se basicamente em uma coisa: fazer commit no SVN.
-Em uma imagem:
+## A motivação
 
-## Go-Horse detected
+Fazia muito tempo que tinha o desejo de construir um blog e compartilhar para a comunidade tudo que aprendi e aprendo diariamente com ruby, rails, devOps e assuntos afins, foi quando o [brodock](https://github.com/brodock) resolve divulgar o portal do Ruby on Rails Brasil para a comunidade.
 
-Esse processo testless, horseness, etc, provavelmente foi aplicado em muitas empresas no passado (e ainda é!?!?!?!), e mudar a cultura é algo difícil.
-Isso tudo foi na era pré-jQuery e eu ainda nem fazia parte da empresa, mas quando cheguei, esse era o cenário.
+No primeiro momento gostei muito da iniciativa dele e decidi abrir o repositório do projeto para visualizar como ele fez o portal, quando abri o descobri que ele usou um cara chamado *Middleman*, nunca tinha usado nem seque falado dele, para minha surpresa o projeto foi feito poucas lnhas de código e de uma forma muito rápida.
 
-Acredito que a base para se ter um produto de qualidade é garantir que o código também tenha qualidade.
-Um ambiente de desenvolvimento com tecnologia de ponta e processos bem definidos é uma das ferramentas que vai nos permitir fazer código consistente, consequentemente gerando produtos melhores.
+A cada arquivo que visualizava não acreditava como um portal foi criado com tão poucas linhas de código e sem a necessidade de usar todo o poder o Ruby on Rails. Isso para mim foi muito incrível, então eu decidi construir o meu e ver se realmente era simples como estava no repositório do [portal do Ruby on Rails](https://github.com/rubyonrails-brasil/rubyonrails-brasil.github.io).
 
-## Testar front-end é difícil
+Para minha surpresa consegui fazer o blog e o mais surpreendente foi o tempo que levei para constuir. Foram nada mais que 4 horas para deixar o blog da forma como vocês conseguem acessar hoje. O mais incrível ainda foi perceber que a quantidade de linhas feitas foram 10% do que faria o mesmo projeto usando todo o poder Ruby on Rails por completo.
 
-Front-end é diferente. Deal with it.
-Óbvio que muitos dos conceitos existentes em outras linguagens e plataformas são aplicáveis nesse mundo, mas não tudo.
-Para empresas em que a realidade não é o desenvolvedor full-stack isso fica muito claro. Basta falar com um desenvolvedor com brackground back-end para entender que pouca coisa pode ser reutilizada na camada do browser.
+Nestas 4 horas surgiram muitas dúvidas e muitas pesquisas, mas 90% do que queria a própria documentação do *Middleman* já estava lá, só no pronto de você ler.
 
-Fazer qualquer tipo de teste no ambiente front-end não é uma tarefa fácil.
+Foi tão divertido que vou fazer uma seria de posts de como montar este mesmo blog para aqueles que desejam montar seu blog pessoal de forma fácil, rápida e sem perder tempo com pesquisa e curva de aprendizado. Vou mostrar também como fazer o seu projeto ser hospedado dentro do github, como é o caso do meu blog. Nesta primeira versão ainda não coloquei meu próprio domínio, mas até o final da série de posts pretendo colocar e será um post somente como fazer isso.
 
-A velha história: browsers, resolução de tela, sistema operacional, devices e plataformas diferentes são algumas das variáveis que temos nesse mundo complexo.
+## O que vou mostrar nos primeiros posts?
 
-A verdade é que agora estamos em um cenário totalmente diferente. Dizer que "é difícil" não é mais desculpa, e difícil não é impossível.
+- Como iniciar um projeto limpo sem e com template no Middleman
+- Criar e tornar os posts dinâmicos com poucas linhas de código
+- Listas os artigos de uma tag com um único arquivo.
+- Construir layouts e dinamizar layout para cada tipo de informação
+- Adicionar o sistema de comentário Disqus com a gem Middleman-disqus
+- Configurar seu blog para o Google Analytics
+- Constuir helpers e data
+- Configurar o seu blog para fazer o deploy automaticamente para o github pages
+- Como preparar seu repositório para usar github pages
 
-Com o avanço da tecnologia na área de front-end e a quantidade de ferramentas disponíveis que temos atualmente, testar bem e de forma automatizada o seu produto, ter processos coerentes, seguir e aplicar conceitos sólidos de mercado, etc, é o mínimo.
+<br>Espero poder contribuir e ajudar a comunidade, meus posts também seram colocado no portal do Ruby on Rails Brasil como forma de colaboração. Não quero deixar somente aqui esse compartilhamento, mas que chegue ao máximo de pessoas, amigos e/ou novos amigos e aqueles que desejam aprofundar nessa linguagem que hoje é a minha primeira linguagem que uso no meu dia-a-dia.
 
-## Onde estamos no Terra
-
-Estamos no ponto que ainda considero básico.
-
-- Todas aplicações são (ou devem ser) baseados no nosso Framework interno
-- Todas aplicações devem possuir testes unitários
-- Os testes unitários rodam no PhantomJS e no browser
-- Todas aplicações são iniciadas com um scaffold básico que garante consistência
-- Todas aplicações devem ser documentadas
-- O build de todas aplicações são baseadas no Grunt
-- O Grunt garante que todas aplicações possuam tasks básicas de validação e de build
-- Cada aplicação é um projeto isolado no Github (usamos a solução enterprise)
-- O deploy é feito de forma automática pelo noss CI server (Jenkins)
-- O CI server obrigatóriamente roda as tasks de build e validação.
-
-<br>Pontos falhos que devemos melhorar:
-
-O desenvolvedor pode desabilitar os testes antes de fazer deploy
-Grande parte dos testes da aplicação precisam de mão humana
-Não existe teste comportamental nos projetos (BDD)
-Não existe teste automatizado para múltiplos browsers, plataformas e dispositivos
-Não existe um dashboard para acompanhar o status de cada aplicação
-
-## Como resolver os pontos falhos
-
-```javascript
-var s = "JavaScript syntax highlighting";
-alert(s);
-```
-
-"O desenvolvedor pode desabilitar os testes antes de fazer deploy" O nosso CI server roda 2 tasks do Grunt: ci-validate e ci-build.
-Estas tasks são responsáveis por validar (testes, lint, style, etc) e fazer o build.
-O problema é que a task de validação precisa existir no projeto, e em alguns casos ela já foi desabilitada por algum desenvolvedor espertinho que não quis parar para resolver um erro simples, ou não quis validar os testes unitários.
-Uma possível solução seria criar um mecanismo de defesa que sempre incluisse a task de validação no CI server. Desta maneira, mesmo que o projeto não faça validação, o servidor irá fazer, e bloquear a deploy em caso de falha.
-
-*"Grande parte dos testes da aplicação precisam de mão humana"*
-A responsabilidade de testar uma interface fica dividida entre desenvolvedor, gerente, área de produtos e quem mais estiver envolvido no projeto.
-Isso é péssimo, nunca ninguém sabe ao certo o que validar, e tudo acaba sendo muito superficial.
-Uma possível solução seria integrar a cada projeto testes compartamentais, tornando assim o processo mais consistente e menos dependente de pessoas.
-
-*"Não existe teste automatizado para múltiplos browsers, plataformas e dispositivos"*
-O processo que temos hoje apenas roda testes no PhantomJS rodando em um Linux.
-Já é um primeiro passo, mas longe do ideal.
-Nosso próximo passo é integrar alguma solução como o WebDriver.
-
-## Conclusão
-
-```ruby
-class A < B; def self.create(object = User) object end end
-class Zebra; def inspect; "X#{2 + self.object_id}" end end
-
-module ABC::DEF
-  include Comparable
-
-  # @param test
-  # @return [String] nothing
-  def foo(test)
-    Thread.new do |blockvar|
-      ABC::DEF.reverse(:a_symbol, :'a symbol', :<=>, 'test' + ?\012)
-      answer = valid?4 && valid?CONST && ?A && ?A.ord
-    end.join
-  end
-
-  def [](index) self[index] end
-  def ==(other) other == self end
-end
-
-class Car < ActiveRecord::Base
-  has_many :wheels, class_name: 'Wheel', foreign_key: 'car_id'
-  scope :available, -> { where(available: true) }
-end
-
-hash = {1 => 'one', 2 => 'two'}
-
-2.0.0p0 :001 > ['some']
- => ["some"]
-```
-
-Mesmo não sendo nada revolucionário, resolvi compartilhar o que fazemos, pois tenho certeza que será útil de alguma forma para alguém.
-Como falei antes, ainda considero esse processo muito básico e estamos correndo para chegar em um outro patamar em breve.
-Comparando com o processo anterior, evoluímos uns 10 anos em pouco mais de 2.
+Abraço e todos e bons códigos.
