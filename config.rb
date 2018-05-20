@@ -70,7 +70,7 @@ activate :deploy do |deploy|
 end
 
 activate :google_analytics do |ga|
-  ga.tracking_id = 'UA-45299862-1'
+  ga.tracking_id = 'UA-45299862-8'
 end
 
 activate :disqus do |d|
