@@ -36,6 +36,7 @@ module CustomHelpers
 
   def generate_fb_tags
     capture_haml do
+      haml_tag(:meta, property: 'fb:app_id', content: '607612659310178')
       haml_tag(:meta, property: 'og:type', content: fb_metatag_type)
       haml_tag(:meta, property: 'og:title', content: fb_metatag_title)
       haml_tag(:meta, property: 'og:description', content: fb_metatag_description)
