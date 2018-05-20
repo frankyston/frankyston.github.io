@@ -40,6 +40,7 @@ module CustomHelpers
       haml_tag(:meta, property: 'og:title', content: fb_metatag_title)
       haml_tag(:meta, property: 'og:description', content: fb_metatag_description)
       haml_tag(:meta, property: 'og:url', content: fb_metatag_url)
+      haml_tag(:meta, property: 'og:image', content: fb_metatag_image)
       haml_tag(:meta, property: 'og:image:url', content: fb_metatag_image)
       haml_tag(:meta, property: 'og:image:type', content: fb_metatag_image_type)
       haml_tag(:meta, property: 'og:image:width', content: fb_metatag_image_width)
