@@ -77,6 +77,20 @@ activate :disqus do |d|
   d.shortname = 'frankyston'
 end
 
+activate :ogp do |ogp|
+  #
+  # register namespace with default options
+  #
+  ogp.namespaces = {
+    fb: data.ogp.fb,
+    # from data/ogp/fb.yml
+    og: data.ogp.og
+    # from data/ogp/og.yml
+  }
+  ogp.base_url = 'http://frankyston.tech/'
+  ogp.blog = true
+end
+
 # Middleman-Syntax - https://github.com/middleman/middleman-syntax
 set :haml, { ugly: true }
 set :markdown_engine, :redcarpet

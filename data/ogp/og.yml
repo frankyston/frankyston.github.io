@@ -1,0 +1,9 @@
+ogp:
+  fb:
+    description: 'This is my fixture Middleman site.'
+    title: 'This is my title'
+    image:
+      '': http://frankyston.tech/images/jsconfar.png
+      type: image/png
+      width: 400
+      height: 300
