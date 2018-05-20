@@ -1,7 +1,7 @@
 ogp:
-  fb:
-    description: 'This is my fixture Middleman site.'
-    title: 'This is my title'
+  og:
+    description: 'Coisas sobre Ruby on Rails e desenvolvimento Web'
+    title: 'Frankyston Lins'
     image:
       '': http://frankyston.tech/images/jsconfar.png
       type: image/png

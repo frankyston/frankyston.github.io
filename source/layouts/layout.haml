@@ -17,11 +17,7 @@
     = stylesheet_link_tag :site
 
     / Facebook Tags
-    %meta{:content => "#{page_description}", :property => "og:description"}
-    %meta{:content => "Frankyston Lins", :property => "og:site_name"}
-    %meta{:content => "Frankyston Lins", :property => "og:title"}
-    %meta{:content => "website", :property => "og:type"}
-    %meta{:content => "//frankyston.tech", :property => "og:url"}
+    = ogp_tags
   %body
     %nav.social
       %ul.meni__list

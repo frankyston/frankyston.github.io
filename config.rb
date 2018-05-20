@@ -82,13 +82,13 @@ activate :ogp do |ogp|
   # register namespace with default options
   #
   ogp.namespaces = {
-    fb: data.ogp.fb,
+    fb: data.ogp.fb
     # from data/ogp/fb.yml
-    og: data.ogp.og
+    # og: data.ogp.og
     # from data/ogp/og.yml
   }
   ogp.base_url = 'http://frankyston.tech/'
-  ogp.blog = true
+  ogp.blog = false
 end
 
 # Middleman-Syntax - https://github.com/middleman/middleman-syntax

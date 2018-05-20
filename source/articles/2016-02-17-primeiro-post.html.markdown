@@ -4,6 +4,23 @@ date: 2016-02-17 10:11
 tags: comunidade
 author: Frankyston Lins
 layout: post
+ogp:
+  fb:
+    description: 'Constuir um blog e compartilhar para a comunidade tudo que aprendi no desenvolvimento web.'
+    title: 'Primeiro post'
+    image:
+      '': http://frankyston.tech/images/jsconfar.png
+      type: image/png
+      width: 400
+      height: 300
+  og:
+    description: 'Constuir um blog e compartilhar para a comunidade tudo que aprendi no desenvolvimento web.'
+    title: 'Primeiro post'
+    image:
+      '': http://frankyston.tech/images/jsconfar.png
+      type: image/png
+      width: 400
+      height: 300
 ---
 
 ## A motivação

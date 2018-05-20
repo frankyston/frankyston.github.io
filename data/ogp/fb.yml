@@ -1,10 +1,9 @@
 ogp:
   fb:
-    description: 'This is my fixture Middleman site.'
-    title: 'This is my title'
+    description: 'Coisas sobre Ruby on Rails e desenvolvimento Web'
+    title: 'Frankyston Lins'
     image:
-      '': http://mydomain.tld/path/to/fbimage.png
-      secure_url: https://secure.mydomain.tld/path/to/fbimage.png
+      '': http://frankyston.tech/images/jsconfar.png
       type: image/png
       width: 400
       height: 300
