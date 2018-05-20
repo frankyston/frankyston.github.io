@@ -9,14 +9,15 @@ gem 'wdm', '~> 0.1.0', platforms: [:mswin, :mingw]
 gem 'tzinfo-data', platforms: [:mswin, :mingw, :jruby]
 
 # Middleman Gems
-gem 'middleman', '>= 4.0.0'
+gem 'middleman'
 gem 'middleman-livereload'
-gem 'middleman-compass', '>= 4.0.0'
-gem 'middleman-sprockets', '~> 4.0.0.rc'
-gem 'middleman-deploy', '2.0.0.pre.alpha'
-gem 'middleman-google-analytics', '~> 2.0'
+gem 'middleman-compass'
+gem 'middleman-sprockets'
+gem 'middleman-deploy', github: 'middleman-contrib/middleman-deploy', branch: 'master'
+gem 'middleman-google-analytics'
 gem "middleman-disqus"
 
 gem "middleman-syntax"
-gem 'redcarpet', '~> 3.3.4'
+gem 'redcarpet'
 gem "middleman-blog"
+gem 'nokogiri'
