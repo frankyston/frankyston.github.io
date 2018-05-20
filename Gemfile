@@ -16,7 +16,6 @@ gem 'middleman-sprockets'
 gem 'middleman-deploy', github: 'middleman-contrib/middleman-deploy', branch: 'master'
 gem 'middleman-google-analytics'
 gem "middleman-disqus"
-gem "middleman-ogp"
 
 gem "middleman-syntax"
 gem 'redcarpet'

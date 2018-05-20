@@ -4,23 +4,14 @@ date: 2016-04-10 11:14
 tags: comunidade, flisol, ionic, angular
 author: Frankyston Lins
 layout: post
-ogp:
-  fb:
-    description: 'Segue o link para o donwload do slide da palestra'
-    title: 'Palestra flisol de Redenção 2016'
-    image:
-      '': http://frankyston.tech/images/jsconfar.png
-      type: image/png
-      width: 400
-      height: 300
-  og:
-    description: 'Segue o link para o donwload do slide da palestra'
-    title: 'Palestra flisol de Redenção 2016'
-    image:
-      '': http://frankyston.tech/images/jsconfar.png
-      type: image/png
-      width: 400
-      height: 300
+fb:
+  title: 'Palestra flisol de Redenção 2016'
+  description: 'Segue o link para o donwload do slide da palestra'
+  image:
+    url: /images/jsconfar.png
+    type: image/png
+    width: 400
+    height: 300
 ---
 
 ## A motivação
