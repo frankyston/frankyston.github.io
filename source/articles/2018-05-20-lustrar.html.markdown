@@ -1,0 +1,30 @@
+---
+title: Portfólio - Lustrar
+date: 2018-05-20 19:28
+tags: portfolio
+author: Frankyston Lins
+layout: post
+fb:
+  title: 'Site Lustrar'
+  description: 'Site da empresa Lustrar'
+  image:
+    url: /images/portfolio/lustrar.png
+    type: image/png
+    width: 400
+    height: 300
+---
+
+## [Lustrar](http://www.lustrar.com.br)
+
+![Lustrar](/images/portfolio/lustrar.png "Lustrar")
+
+Site institucional da empresa Lustrar. O site foi desenvolvido no período em que estava na Core Digital.
+
+## O que foi usado?
+
+- Ruby on Rails
+- MySQL
+- SendGrid
+- HTML5
+- CSS3
+- Javascript

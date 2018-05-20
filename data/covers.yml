@@ -1,6 +1,18 @@
+- rsvpnet:
+  cover: /images/portfolio/rsvpnet.png
+- landingrsvpnet:
+  cover: /images/portfolio/landingrsvpnet.png
+- flashcourier:
+  cover: /images/portfolio/flashcourier.png
+- suricates:
+  cover: /images/portfolio/suricates.png
+- lustrar:
+  cover: /images/portfolio/lustrar.png
+- coredigital:
+  cover: /images/portfolio/coredigital.png
+- catulake:
+  cover: /images/portfolio/catulake.png
 - primeiro-post:
   cover: /images/jsconfar.png
 - palestra-flisol-rendecao:
-  cover: /images/jsconfar.png
-- coredigital:
   cover: /images/jsconfar.png

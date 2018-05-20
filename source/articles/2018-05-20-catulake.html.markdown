@@ -1,0 +1,30 @@
+---
+title: Portfólio - Catu Lake
+date: 2018-05-20 19:20
+tags: portfolio
+author: Frankyston Lins
+layout: post
+fb:
+  title: 'Site Catu Lake'
+  description: 'Site da empresa Catu Lake'
+  image:
+    url: /images/portfolio/catulake.png
+    type: image/png
+    width: 400
+    height: 300
+---
+
+## [Catu Lake](http://www.catulake.com.br)
+
+![Catu Lake](/images/portfolio/catulake.png "Catu Lake")
+
+Site institucional da empresa Catu Lake. O site foi desenvolvido no período em que estava na Core Digital.
+
+## O que foi usado?
+
+- Ruby on Rails
+- MySQL
+- SendGrid
+- HTML5
+- CSS3
+- Javascript

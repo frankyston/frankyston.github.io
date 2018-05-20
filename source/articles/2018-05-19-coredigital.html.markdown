@@ -8,12 +8,23 @@ fb:
   title: 'Site Core Digital'
   description: 'Site da empresa Core Digital'
   image:
-    url: /images/jsconfar.png
+    url: /images/portfolio/coredigital.png
     type: image/png
     width: 400
     height: 300
 ---
 
-## Primeiro site em Ruby on Rails
+## [Coredigital](http://www.coredigital.com.br)
 
-Este é um post de teste para tags portfólio.
+![Core Digital](/images/portfolio/coredigital.png "Core Digital")
+
+Site institucional da empresa Core Digital.
+
+## O que foi usado?
+
+- Ruby on Rails
+- MySQL
+- SendGrid
+- HTML5
+- CSS3
+- Javascript

@@ -1,0 +1,36 @@
+---
+title: Portfólio - Sistema RSVPNet
+date: 2018-05-20 19:49
+tags: portfolio
+author: Frankyston Lins
+layout: post
+fb:
+  title: 'Sistema RSVPNet'
+  description: 'Landing page do sistema RSVPNet'
+  image:
+    url: /images/portfolio/rsvpnet.png
+    type: image/png
+    width: 400
+    height: 300
+---
+
+## [Sistema RSVPNet](https://backoffice.netrsvp.com)
+
+![Sistema RSVPNet](/images/portfolio/rsvpnet.png "Sistema RSVPNet")
+
+Sistema de RSVP da startup RSVPNet. O sistema foi desenvolvido no período em que estava na Telequality.
+
+O sistema foi desenvolvido para facilitar o RSVP de eventos corporativos. Com o sistema é possível fazer todo o processo de RSVP sem a necessidade de uma grande equipe de call center para fazer todo o processo de convite, alocação, confirmação e envio das informações.
+
+## O que foi usado?
+
+- Ruby on Rails
+- PostgreSQL
+- SendGrid
+- HTML5
+- CSS3
+- Javascript
+- Redis
+- Sidekiq
+- AWS
+- Cloud66
