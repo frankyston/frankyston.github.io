@@ -10,8 +10,8 @@ fb:
   image:
     url: /images/portfolio/suricates.png
     type: image/png
-    width: 400
-    height: 300
+    width: 1280
+    height: 680
 ---
 
 ## [Suricates](http://www.suricates.com.br)
