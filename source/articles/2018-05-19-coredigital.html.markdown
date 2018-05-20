@@ -5,7 +5,7 @@ tags: portfolio
 author: Frankyston Lins
 layout: post
 ogp:
-  fb:
+  og:
     description: 'Este é um post de teste para tags portfólio.'
     title: 'Primeiro site em Ruby on Rails'
     image:
@@ -13,7 +13,7 @@ ogp:
       type: image/png
       width: 400
       height: 300
-  og:
+  fb:
     description: 'Este é um post de teste para tags portfólio.'
     title: 'Primeiro site em Ruby on Rails'
     image:
