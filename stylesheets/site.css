@@ -1064,8 +1064,9 @@ h1 {
 .post-title {
   text-align: center;
   margin: 40px 0;
-  font-weight: bold; }
+  font-weight: bold;
+  line-height: 50px; }
 
-/* line 71, site.css.scss */
+/* line 72, site.css.scss */
 pre code {
   background: #f0f0f0 !important; }
