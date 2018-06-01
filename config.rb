@@ -82,7 +82,7 @@ set :haml, { ugly: true }
 set :markdown_engine, :redcarpet
 set :markdown, fenced_code_blocks: true, smartypants: true, footnotes: true,
   link_attributes: { rel: 'nofollow' }, tables: true
-activate :syntax, line_numbers: false
+activate :syntax, line_numbers: true
 
 # Build-specific configuration
 configure :build do
