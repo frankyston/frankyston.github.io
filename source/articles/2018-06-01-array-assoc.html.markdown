@@ -22,7 +22,7 @@ O exemplo a seguir criamos um array com dois elementos, cara elemento tem dois i
 
 <script src="https://gist.github.com/frankyston/5d04177f784784bd6532d2ec3f18e37f.js"></script>
 
-No próximo exemplo vamos usar o **reassoc**, agora do lugar de ele buscar pelo no associado ele vai buscar pelo valor.
+No próximo exemplo vamos usar o **rassoc**, agora do lugar de ele buscar pelo no associado ele vai buscar pelo valor.
 
 <script src="https://gist.github.com/frankyston/5de0a62c55db42c84aed7078ea2058ae.js"></script>
 
