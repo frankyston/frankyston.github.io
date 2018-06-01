@@ -656,3 +656,13 @@ time {
   margin: 0 auto;
   border-radius: 5px 5px 0 0;
   transition: all 250ms linear 0; }
+
+/* e.g. replace this selector */
+/* line 833, main.scss */
+.codehilite .hll {
+  background-color: #ffffff; }
+
+/* with this one */
+/* line 835, main.scss */
+.highlight .hll {
+  background-color: #ffffff; }

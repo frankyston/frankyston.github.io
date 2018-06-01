@@ -6,6 +6,7 @@
  * Corrects `block` display not defined in IE 8/9.
  */
 @import url(vendor/github-gist.css);
+@import url(vendor/monokai.css);
 /* line 11, _normalize.scss */
 article,
 aside,
@@ -1007,28 +1008,38 @@ time {
   border-radius: 5px 5px 0 0;
   transition: all 250ms linear 0; }
 
-/* line 5, site.css.scss */
+/* e.g. replace this selector */
+/* line 833, main.scss */
+.codehilite .hll {
+  background-color: #ffffff; }
+
+/* with this one */
+/* line 835, main.scss */
+.highlight .hll {
+  background-color: #ffffff; }
+
+/* line 6, site.css.scss */
 body {
   background: #fff;
   font-size: 1em; }
 
-/* line 10, site.css.scss */
+/* line 11, site.css.scss */
 .logo img {
   height: 18.75em;
   margin-top: 6em; }
 
-/* line 15, site.css.scss */
+/* line 16, site.css.scss */
 h1 {
   font-size: 2.5em;
   font-weight: 400;
   margin: 0; }
 
-/* line 21, site.css.scss */
+/* line 22, site.css.scss */
 .doc {
   margin: 3em 0;
   font-size: 1.1em;
   font-weight: 300; }
-  /* line 26, site.css.scss */
+  /* line 27, site.css.scss */
   .doc a {
     border: 1px solid white;
     border-radius: 3px;
@@ -1036,13 +1047,13 @@ h1 {
     color: white;
     text-decoration: none;
     transition: color 0.1s linear; }
-    /* line 33, site.css.scss */
+    /* line 34, site.css.scss */
     .doc a:hover {
       background: rgba(0, 0, 0, 0.2);
       color: white;
       transition: all 0.15s linear; }
 
-/* line 41, site.css.scss */
+/* line 42, site.css.scss */
 .welcome {
   -webkit-animation-name: welcome;
   -webkit-animation-duration: .9s; }
@@ -1060,13 +1071,13 @@ h1 {
     opacity: 1; }
   to {
     -webkit-transform: scale(1); } }
-/* line 65, site.css.scss */
+/* line 66, site.css.scss */
 .post-title {
   text-align: center;
   margin: 40px 0;
   font-weight: bold;
   line-height: 50px; }
 
-/* line 72, site.css.scss */
+/* line 73, site.css.scss */
 pre code {
   background: #f0f0f0 !important; }

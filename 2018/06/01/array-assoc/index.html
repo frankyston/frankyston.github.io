@@ -2,9 +2,9 @@
 <html lang='en'>
 <head>
 <meta charset='UTF-8'>
-<title>Frankyston Lins</title>
+<title>Frankyston Lins: Array Associativos</title>
 <meta content='Frankyston' name='author'>
-<meta content='Coisas sobre Ruby on Rails e desenvolvimento Web' name='description'>
+<meta content='Em alguns momentos queremos trabalhar com arrays. Só que não podemos trabalhar com dados nomeados como é comum em um Hash. Para isso existe dois...' name='description'>
 <meta content='True' name='HandheldFriendly'>
 <meta content='320' name='MobileOptimized'>
 <meta content='width=device-width, initial-scale=1' name='viewport'>
@@ -16,24 +16,24 @@
 <link href="/stylesheets/site.css" rel="stylesheet" />
 <!-- Facebook Tags -->
 <meta content='607612659310178' property='fb:app_id'>
-<meta content='website' property='og:type'>
-<meta content='Frankyston Lins' property='og:title'>
-<meta content='Coisas sobre Ruby on Rails e desenvolvimento Web' property='og:description'>
-<meta content='http://frankyston.tech/tag/angular.html' property='og:url'>
-<meta content='http://frankyston.tech/images/foto.png' property='og:image'>
-<meta content='http://frankyston.tech/images/foto.png' property='og:image:url'>
-<meta content='image/png' property='og:image:type'>
-<meta content='300' property='og:image:width'>
-<meta content='400' property='og:image:height'>
+<meta content='article' property='og:type'>
+<meta content='Array associativos' property='og:title'>
+<meta content='Como construir arrays associativos no ruby' property='og:description'>
+<meta content='http://frankyston.tech/articles/2018-06-01-array-assoc.html' property='og:url'>
+<meta content='http://frankyston.tech/images/portfolio/code-ruby.jpg' property='og:image'>
+<meta content='http://frankyston.tech/images/portfolio/code-ruby.jpg' property='og:image:url'>
+<meta content='image/jpg' property='og:image:type'>
+<meta content='1608' property='og:image:width'>
+<meta content='1206' property='og:image:height'>
 <meta content='Frankyston Lins' property='og:site_name'>
 
 <!-- Twitter Tags -->
 <meta content='summary_large_image' property='twitter:card'>
 <meta content='@frankyston' property='twitter:site'>
-<meta content='Frankyston Lins' property='twitter:title'>
-<meta content='Coisas sobre Ruby on Rails e desenvolvimento Web' property='twitter:description'>
+<meta content='Array associativos' property='twitter:title'>
+<meta content='Como construir arrays associativos no ruby' property='twitter:description'>
 <meta content='@frankyston' property='twitter:creator'>
-<meta content='http://frankyston.tech/images/foto.png' property='twitter:image:src'>
+<meta content='http://frankyston.tech/images/portfolio/code-ruby.jpg' property='twitter:image:src'>
 <meta content='http://frankyston.tech' property='twitter:domain'>
 
 </head>
@@ -76,26 +76,49 @@ Frankyston Lins
 <div class='subtitle'>Coisas sobre Ruby on Rails e desenvolvimento Web</div>
 </section>
 </header>
-<section class='posts' id='posts'>
-<ul class='postList'>
-<li class='post'>
-<div style=' background: url(&#39;/images/code-ruby.jpg&#39;) no-repeat center center;  -webkit-background-size: cover;-moz-background-size: cover;-o-background-size: cover;background-size: cover; '>
-<span class='post__date'>
-10/04/2016 11:14
-</span>
-<article class='post__content'>
-<a href="/2016/04/10/palestra-flisol-redencao/" class="post__title">Palestra Flisol Redenção</a>
-<section class='post__excerpt'>
-A motivação
-
-Há convite do meu amigo Manuel Muniz,
-</section>
-</article>
-</div>
-</li>
+<ul class='categories'>
+  <li>
+    <a class='categoryTag' href='/tag/ruby/'>ruby</a>
+    <a class='categoryTag' href='/tag/tips/'>tips</a>
+  </li>
 </ul>
-</section>
 
+<article class='postContent'>
+<h1 class='post-title'>Array Associativos</h1>
+<p>Em alguns momentos queremos trabalhar com <em><strong>arrays</strong></em>. Só que não podemos trabalhar com dados nomeados como é comum em um <strong><strong>Hash</strong></strong>.</p>
+
+<p>Para isso existe dois métodos muito legais que podemos usar caso deseje trabalhar com arrays e de forma nomeadas, são elas <strong><strong>assoc</strong></strong> e <strong><strong>rassoc</strong></strong>.</p>
+
+<p>O exemplo a seguir criamos um array com dois elementos, cara elemento tem dois indices, o primeiro é o nome do indice e o segundo é o valor, usamos o <strong>assoc</strong> para para buscar um elemento pelo indice.</p>
+
+<script src="https://gist.github.com/frankyston/5d04177f784784bd6532d2ec3f18e37f.js"></script>
+
+<p>No próximo exemplo vamos usar o <strong>reassoc</strong>, agora do lugar de ele buscar pelo no associado ele vai buscar pelo valor.</p>
+
+<script src="https://gist.github.com/frankyston/5de0a62c55db42c84aed7078ea2058ae.js"></script>
+
+<p>Viu como é simples trabalhar com arrays associativos?</p>
+
+<p>Já precisou alguma vez fazer algo parecido? Conte pra gente como você fez, se tem sugestões de fazer diferente? comenta ai.</p>
+
+<p>Abraço e até a próxima :)</p>
+
+<div id='disqus_thread'></div>
+<script type='text/javascript'>
+//<![CDATA[
+                  var disqus_shortname = 'frankyston';
+          
+    (function() {
+        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+        dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+//]]>
+</script>
+<noscript>Please enable JavaScript to view the <a href='http://disqus.com/?ref_noscript'>comments powered by Disqus.</a></noscript>
+<a href='http://disqus.com' class='dsq-brlink'>comments powered by <span class='logo-disqus'>Disqus</span></a>
+
+</article>
 
 <footer class='bottom'>
 <div class='licenses'>
